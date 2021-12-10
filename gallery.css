@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html { 
+    background: url(/images/christopher-burns-Kj2SaNHG-hg-unsplash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  
+  
+  header{
+    margin-bottom: 4%;
+  
+  }
+  
+  
+  body {
+    margin: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  h4, p{
+      color: black;
+  }
+  
+  
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(238, 229, 229);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 2%;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, rgb(189, 177, 177), rgb(117, 105, 186));
+  }
+  
+  li {
+  float: left;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    
+  }
+  
+  #NavBar{
+    display: none;
+  
+  }
+
+
+
+
+  .column {
+    width: 23.33%;
+    padding: 6%;
+    margin:  2% ;
+    border: rgb(117, 105, 186), block;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    border: solid rgb(117, 105, 186) ;
+
+  }
+
+  .column:hover{
+    border-color: green;
+    
+    
+    }
+
+  .column img{
+    width: 100%;
+  
+  }
+
+
+
+.flexcontianer{
+    display: flex;
+    justify-content:space-between;
+
+
+}
+
+
+  
+  .containerTab {
+    padding:12%;
+    margin: 2%;
+    margin-bottom: 8%;
+    background-image: linear-gradient(to bottom right, rgb(189, 177, 177), rgb(117, 105, 186));
+    display: none;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the container tab */
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(189, 177, 177), rgb(117, 105, 186));
+  }
+  
+
+  @media only screen and (max-width: 700px) {
+    ul{
+      display: flex;
+      flex-direction:column;
+    }
+    li{
+      margin:2% ;
+      width: 100%;
+  
+   
+    }
+    .flexcontianer{
+      flex-direction:column;
+      justify-content:center;
+     
+    }
+    .column{
+      width:  90%;
+      margin-left: 4%;
+    }
+    
+  .column img{
+    width: 50%;
+  
+  }
+
+  }

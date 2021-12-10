@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html { 
+    background: url(/images/christopher-burns-Kj2SaNHG-hg-unsplash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  
+  
+  header{
+    margin-bottom: 4%;
+  
+  }
+  
+  
+  body {
+    margin: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  h4, p{
+      color: black;
+  }
+  
+  
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(238, 229, 229);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 2%;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, rgb(189, 177, 177), rgb(117, 105, 186));
+  }
+  
+  li {
+  float: left;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    
+  }
+  
+  #NavBar{
+    display: none;
+  
+  }
+
+form, p {
+  margin: 20px;
+}
+
+p.note {
+  font-size: 1rem;
+  color: red;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 4px;
+  font-family: 'Lato';
+  width: 300px;
+  margin-top: 10px;
+}
+
+label {
+  width: 300px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+label span {
+  font-size: 1rem;
+}
+
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
+
+[type="submit"], [type="reset"], button, html [type="button"] {
+  background-color: #04AA6D;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  cursor: pointer;
+  
+}
+
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: rgb(30, 228, 80);
+}
+
+.formContainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+input[type=text],input[type=number], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, rgb(189, 177, 177), rgb(117, 105, 186));
+}
+
+@media only screen and (max-width: 700px) {
+  ul{
+    display: flex;
+    flex-direction:column;
+  }
+  li{
+    margin:2% ;
+    width: 100%;
+
+ 
+  }
+  .formContainer{
+    width: 100%;
+  }
+}
