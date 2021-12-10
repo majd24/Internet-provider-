@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styless/styles.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <div class="parallax-img"></div>
+
+<header>
+  <div class="navBar" >
+  <div id="iconMenu" class="container" onclick="iconToggle(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+<nav id="NavBar">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+</div>
+
+</header>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');">
+   Familly Bundles
+  </div>
+  <div class="column" onclick="openTab('b2');">
+    Gamers Bundles
+  </div>
+  <div class="column" onclick="openTab('b3');">
+    Phone Unlimited
+  </div>
+</div>
+
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Familly Bundles</h2>
+  <p>Enjoy usign internet form anywhere with your family members, with our familly bundles you could save money while have a reliable internet </p>
+</div>
+
+<div id="b2" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Gamers Bundles</h2>
+  <p>Enjoy your games at a light speed  internet, with the insane bundle you get unlimited internet from everywhere anytime.</p>
+</div>
+
+<div id="b3" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Phone Unlimited</h2>
+  <p>Enjoy our unlimited internet bundles, variety of speeds from anywhere int he EU</p>
+</div>
+
+<footer>
+  <p>Footer</p>
+</footer>
+<script src="/js/index.js"></script>
+</body>
+</html>

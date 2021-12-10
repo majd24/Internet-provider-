@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styless/gallery.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.min.js" integrity="sha512-YKxHqn7D0M5knQJO2xKHZpCfZ+/Ta7qpEHgADN+AkY2U2Y4JJtlCEHzKWV5ZE87vZR3ipdzNJ4U/sfjIaoHMfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+<header>
+  <div class="navBar" >
+  <div id="iconMenu" class="container" onclick="iconToggle(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+<nav id="NavBar">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+</div>
+</header>
+  <!-- Three columns -->
+  <div class="row">
+    <div class="flexcontianer">
+      <div class="column" onclick="openTab('b1');">
+        <h2>TP-Link Archer C7</h2>
+        <a href="/images/router/51R2a9p-vNL._AC_UY218_.jpg">
+          <img src="/images/router/51R2a9p-vNL._AC_UY218_.jpg" class="zoom" alt="TP-Link Archer C7 image">
+        </a>
+      </div>
+      <div class="column" onclick="openTab('b2');">
+        <h2>TP-Link WLAN Router</h2>
+        <a href="/images/router/250.jpg">
+          <img src="/images/router/250.jpg" class="zoom" alt="TP-Link WLAN Router image">
+        </a>
+      </div>
+      <div class="column" onclick="openTab('b3');">
+        <h2>TP-Link N300</h2>
+        <a href="/images/router/150.jpg">
+          <img src="/images/router/150.jpg" class="zoom" alt="TP-Link N300 image">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Full-width columns: (hidden by default) -->
+  <div id="b1" class="containerTab">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>TP-Link Archer C7</h2>
+    <p>TP-Link Archer C7 Dual Band Gigabit WLAN Router (1300Mbps (5GHz) + 450Mbps (2.4GHz), 5 Gigabit LAN Port, 1 USB 2.0 Port) Black</p>
+  </div>
+  
+  <div id="b2" class="containerTab">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>TP-Link WLAN Router</h2>
+    <p>802.11ac Wave2 WLAN – 1300Mbit/s auf 5 GHz und 600Mbit/s auf 2,4GHz, Black</p>
+  </div>
+  
+  <div id="b3" class="containerTab">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>TP-Link N300</h2>
+    <p>TP-Link TL-WR841N N300 WLAN router (300Mbit / s (2.4GHz), 4 x 10 / 100Mbit / s LAN ports, for connection to cable, DSL, fiber optic modem, access point mode, IPv6), white / black</p>
+  </div>
+  <footer>
+    <p>Footer</p>
+  </footer>
+  <script src="/js/gallery.js"></script>
+  <link rel="stylesheet" href="/styless/magnify.css">
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="/js/jquery.magnify.js"></script>
+  <script src="js/jquery.magnify-mobile.js"></script> 
+
+</body>
+</html>

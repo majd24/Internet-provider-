@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>services</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styless/services.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="navBar" >
+  <div id="iconMenu" class="container" onclick="iconToggle(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+<nav id="NavBar">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+</div>
+</header>
+<div class="main">
+    <p style="text-align: center; color: rgb(0, 233, 8); font-weight: bold;">/Internet</p>
+  <!-- Three columns -->
+<div class="row">
+	<div class="product-card">
+		<div class="badge">Recomended to Gamers</div>
+		<div class="product-tumb">
+			<h1>1000Mb</h1>
+		</div>
+		<div class="product-details">
+			<span class="product-catagory">Home Internet</span>
+			<h4><a href="">Gigabit Internet</a></h4>
+			<p>Comes with TP-Link Archer C7 router</p>
+            <p>Click on bar to donwload a full HD movie</p>
+            <div id="myProgress" onclick="move(1)">
+                <div id="myBar1">0%</div>
+              </div>
+			<div class="product-bottom-details">
+                <p>Pirce: 60€ /Month</p>
+                <button class="info-button" onclick="moreInfo(1)">Information</button>
+                <div id="myDIV1">
+                    Power your home with a fibre power 1,000 Mbps internet connection to enjoy more of the internet. Fast downloads,
+                     low lag and high reliability means 1,000 Mbps is great for gamers, tech lovers and larger households,
+                      giving everyone a bigger slice of bandwidth to keep all your devices up to speed - whatever tomorrow brings.
+                       Includes two StellarWiFi Pods to give top range and high speeds across all your devices by blocking interference from neighbours’
+                        WiFi to give reliable, fast, smooth WiFi across your home. Includes eero membership - download the App and manage your home WiFi
+                         in just minutes, share your network with guests, and manage family's screen time from anywhere.
+                         </div>
+                <button class="cart-button" onclick="cartFunction(1)">Add to cart</button>
+            </div>
+		</div>
+	</div>
+
+
+    <div class="product-card">
+		<div class="badge">Recomended to Cinemaphiles </div>
+		<div class="product-tumb">
+			<h1>500Mb</h1>
+		</div>
+		<div class="product-details">
+			<span class="product-catagory">Home Internet</span>
+			<h4><a href="">500mb Internet</a></h4>
+			<p>Comes with TP-Link WLAN router</p>
+            <p>Click on bar to donwload a full HD movie</p>
+            <div id="myProgress" onclick="move(2)">
+                <div id="myBar2">0%</div>
+              </div>
+			<div class="product-bottom-details">
+                <p>Pirce: 30€ /Month</p>
+                <button class="info-button" onclick="moreInfo(2)">Information</button>
+                <div id="myDIV2">
+                    Ultrafast internet connection up to 500 Mbps, to give you all the speed, power and entertainment that you'll ever need, 
+                    connecting you to the world, seamlessly. Includes one StellarWiFi Pod to give top range and high speeds across all your devices 
+                    by blocking interference from neighbours’ WiFi to give reliable, fast, smooth WiFi across your home. Includes eero membership - download 
+                    the App and manage your home WiFi in just minutes, share your network with guests,
+                    and manage family's screen time from anywhere. Great for the busy households or professionals. Available nationwide.
+                    </div>
+                <button class="cart-button" onclick="cartFunction(2)">Add to cart</button>
+			</div>
+		</div>
+
+    </div>
+
+    <div class="product-card">
+		<div class="badge">Recomended to avrage users</div>
+		<div class="product-tumb">
+			<h1>250Mb</h1>
+		</div>
+		<div class="product-details">
+			<span class="product-catagory">Home Internet</span>
+			<h4><a href="">250mb Internet</a></h4>
+			<p>Comes with TP-Link N300 router</p>
+            <p>Click on bar to donwload a full HD movie</p>
+            <div id="myProgress" onclick="move(3)">
+                <div id="myBar3">0%</div>
+              </div>
+			<div class="product-bottom-details">
+                <p>Pirce: 15€ /Month</p>
+                <button class="info-button" onclick="moreInfo(3)">Information</button>
+                <div id="myDIV3">
+                    Superfast 250 Mbps connection for hungrier households that love to be online together,
+                    following live events, downloading or streaming movies and series anytime of the day.
+                    </div>
+                <button class="cart-button" onclick="cartFunction(3)">Add to cart</button>
+			</div>
+		</div>
+
+    </div>
+  </div>
+  
+  <p style="text-align: center; color:  rgb(0, 233, 8); font-weight: bold;">/Mobile internet</p>
+  <div class="row">
+
+	<div class="product-card">
+		<div class="badge">Recomended to Streamers</div>
+		<div class="product-tumb">
+			<h1>5G Mobile</h1>
+		</div>
+		<div class="product-details">
+			<span class="product-catagory">Mobile Internet</span>
+			<h4><a href="">Racer Internet</a></h4>
+			<p>Enjoy Unlimited internet on the go</p>
+            <p>Click on bar to donwload a full HD movie</p>
+            <div id="myProgress" onclick="move(4)">
+                <div id="myBar4">0%</div>
+              </div>
+			<div class="product-bottom-details">
+                <p>Pirce: 30€ /Month</p>
+                <button class="info-button" onclick="moreInfo(4)">Information</button>
+                <div id="myDIV4">
+                    Endless calls and SMS to all local, EU & UK numbers from Malta, and when in the EU and UK
+                    Endless international calls and SMS to Australia, Canada, China and the USA from Malta
+                    Endless mobile data in Malta at top speeds on 5G
+                    Live streaming, watching 4K videos, VR? This is the mobile plan for you. All this and more - browsing, emails, chatting, scrolling through social media and making video calls
+                    34 GB mobile data when roaming in the EU & UK
+                    Endless MelitaWiFi across the Maltese islands
+                    </div>
+                <button class="cart-button" onclick="cartFunction(4)">Add to cart</button>
+			</div>
+		</div>
+
+    </div>
+
+
+    <div class="product-card">
+		<div class="badge">Recomended to social media users</div>
+		<div class="product-tumb">
+			<h1>4.5G Mobile</h1>
+		</div>
+		<div class="product-details">
+			<span class="product-catagory">Mobile Internet</span>
+			<h4><a href="">Zoomer Internet</a></h4>
+			<p>Enjoy Unlimited internet on the go</p>
+            <p>Click on bar to donwload a full HD movie</p>
+            <div id="myProgress" onclick="move(5)">
+                <div id="myBar5">0%</div>
+              </div>
+			<div class="product-bottom-details">
+                <p>Pirce: 30€ /Month</p>
+                <button class="info-button" onclick="moreInfo(5)">Information</button>
+                <div id="myDIV5">
+                    Endless calls and SMS to all local, EU & UK numbers from Malta, and when in the EU and UK
+                    Endless international calls and SMS to Australia, Canada, China and the USA from Malta
+                    Endless mobile data in Malta on 5G speeds up to 200 Mbps
+                    Vlog anytime, anyplace, watching 4K videos? This is the mobile plan for you. All this and more - browsing, emails, chatting, scrolling through social media and making video calls
+                    28 GB mobile data when roaming in the EU & UK
+                    Endless MelitaWiFi across the Maltese islands
+                    </div>
+                <button class="cart-button" onclick="cartFunction(5)">Add to cart</button>
+			</div>
+		</div>
+
+    </div>
+
+    <div class="product-card">
+		<div class="badge">Recomended to avrage browsers</div>
+		<div class="product-tumb">
+			<h1>4G Mobile</h1>
+		</div>
+		<div class="product-details">
+			<span class="product-catagory">Mobile Internet</span>
+			<h4><a href="">Surfer Internet</a></h4>
+			<p>Enjoy Unlimited internet on the go</p>
+            <p>Click on bar to donwload a full HD movie</p>
+            <div id="myProgress" onclick="move(6)">
+                <div id="myBar6">0%</div>
+              </div>
+			<div class="product-bottom-details">
+                <p>Pirce: 30€ /Month</p>
+                <button class="info-button" onclick="moreInfo(6)">Information</button>
+                <div id="myDIV6">
+                    Endless calls and SMS to all local numbers from Malta, and when in the EU and UK
+                    Endless mobile data in Malta on 5G speeds up to 4 Mbps
+                    Great for browsing, emails, listening to music, scrolling through social media and chat
+                    21 GB mobile data when roaming in the EU & UK
+                    Endless MelitaWiFi across the Maltese islands
+                    </div>
+                <button class="cart-button" onclick="cartFunction(6)">Add to cart</button>
+		</div>
+
+    </div>
+  </div>
+</div>
+</div>
+  
+  <footer>
+    <p>Footer</p>
+  </footer>
+  <script src="/js/services.js"></script>
+</body>
+</html>
